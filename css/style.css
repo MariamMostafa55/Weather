@@ -13,11 +13,12 @@ input{
 
 }
 .row{
-    height: 50%;
+    height: auto;
     margin-top: 80px;
 }
 .first-card ,.second-card ,.third-card{
-    height: 100%;
+    height: auto; 
+    min-height: 300px; 
 }
 .todaydegree {
     font-size: 70px;

@@ -30,7 +30,6 @@ var currentCity="cairo"
 async function findlocation(){
     result = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=7d77b96c972b4d119a3151101212704&q=${currentCity}&days=3`)
     responsedata= await result.json()
-    console.log(responsedata)
    displaytoday()
    displaynextdays()
 }
@@ -38,7 +37,6 @@ findlocation()
 
 
 let date = new Date()
-console.log(date)
 
 
 
@@ -67,6 +65,5 @@ function displaynextdays(){
 }
 searchInput.addEventListener("keyup",function(){
     currentCity=searchInput.value;
-    console.log(currentCity);
     findlocation();
 })
